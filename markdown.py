@@ -16,12 +16,12 @@ with open(sys.argv[2], 'w') as m:
 			if lineno == 3:
 				titles = line.split()
 				m.write(titles[0] + " | " + titles[1] + " | "  + titles[2] + " | " + titles[3] + " | " + titles[4] + " |\r\n")
-				m.write("-- | -- | -- | -- | -- | ")
+				m.write("-- | -- | -- | -- | -- |\r\n")
 				continue
 			if line.startswith('--'):
 				continue
 			mat = re.search('^([a-zA-Z/+\s4:]+)+\s+(\d+)\s+(\d+)\s+(\d+)\s+(\d+)$', line);
-			m.write(mat.group(1) + " | " + mat.group(2) + " | " + mat.group(3) + " | " + mat.group(4) + " | " + mat.group(5) + "\r\n")
+			m.write(mat.group(1) + " | " + mat.group(2) + " | " + mat.group(3) + " | " + mat.group(4) + " | " + mat.group(5) + " |\r\n")
 	f.closed
 m.closed
 
