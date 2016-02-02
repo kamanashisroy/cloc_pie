@@ -20,7 +20,7 @@ with open(sys.argv[2], 'w') as m:
 				continue
 			if line.startswith('--'):
 				continue
-			mat = re.search('^([a-zA-Z/+\s4:]+)+\s+(\d+)\s+(\d+)\s+(\d+)\s+(\d+)$', line);
+			mat = re.search('^([a-zA-Z/+\s4:._]+)+\s+(\d+)\s+(\d+)\s+(\d+)\s+(\d+)$', line);
 			m.write(mat.group(1) + " | " + mat.group(2) + " | " + mat.group(3) + " | " + mat.group(4) + " | " + mat.group(5) + " |\r\n")
 	f.closed
 m.closed

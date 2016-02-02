@@ -18,6 +18,7 @@ And that will generate a nice `pie.svg` file.
 
 Again, it is also possible to convert the cloc summary table into markdown table.
 ```
-markdown.py summary.txt.lang summary.md
+markdown.py summary.txt.lang summary_lang.md
+markdown.py summary.txt.file summary_file.md
 ```
 Enjoy !
