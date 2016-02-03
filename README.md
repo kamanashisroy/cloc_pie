@@ -46,4 +46,6 @@ shotodol_script.txt                | 8 | 34 | 39 | 354
 shotodol_media.txt                 | 2 | 12 | 20 | 100 
 SUM:                            | 1002 | 16925 | 19938 | 112813 
 
+By the way it is possible to add `--md` argument to `cloc` to generate markdown files.
+
 Enjoy !
