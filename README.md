@@ -3,13 +3,13 @@ Cloc Pie
 
 This software generates pie chart based on [cloc](https://github.com/AlDanial/cloc) output. The code defines which [langauge you are](http://miniim.blogspot.com/2016/02/line-of-code.html). To get to know yourself there are following steps,
 
-1. install [cloc](https://github.com/AlDanial/cloc).
-2. get the code statistics of each project.
-3. Create summary of all the statistics.
+- Install [cloc](https://github.com/AlDanial/cloc).
+- get the code statistics of each project.
+- Create summary of all the statistics.
 ```
 $(CLOC) --sum-reports --out summary.txt *.txt
 ```
-4. Use clock pie to render pie chart.
+- Use clock pie to render pie chart.
 ```
 pie.py summary.txt.lang
 ```
@@ -29,7 +29,7 @@ markdown.py summary.txt.file summary_file.md
 Here is my sample language table.
 
 File | files | blank | comment | code 
--- | -- | -- | -- | -- 
+--- | --- | --- | --- | --- 
 libsync.txt                      | 241 | 8649 | 9998 | 56467 
 aroop.txt                        | 256 | 3561 | 2506 | 22042 
 miniim.txt                        | 88 | 1757 | 3824 | 8572 
@@ -44,6 +44,6 @@ shotodol_web.txt                  | 20 | 116 | 189 | 1151
 shotodol_db.txt                   | 12 | 74 | 122 | 689 
 shotodol_script.txt                | 8 | 34 | 39 | 354 
 shotodol_media.txt                 | 2 | 12 | 20 | 100 
-SUM:                            | 1002 | 16925 | 19938 | 112813
+SUM:                            | 1002 | 16925 | 19938 | 112813 
 
 Enjoy !

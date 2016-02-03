@@ -16,7 +16,8 @@ with open(sys.argv[2], 'w') as m:
 			if lineno == 3:
 				titles = line.split()
 				m.write(titles[0] + " | " + titles[1] + " | "  + titles[2] + " | " + titles[3] + " | " + titles[4] + " \r\n")
-				m.write("-- | -- | -- | -- | -- \r\n")
+				# acording to github markdown, "There must be at least 3 dashes separating each header cell".
+				m.write("--- | --- | --- | --- | --- \r\n")
 				continue
 			if line.startswith('--'):
 				continue
