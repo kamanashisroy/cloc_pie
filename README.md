@@ -28,32 +28,22 @@ markdown.py summary.txt.file summary_file.md
 
 Here is my sample language table.
 
-Language | files | blank | comment | code |
--- | -- | -- | -- | -- |
-C                               | 127 | 8070 | 7770 | 58476 |
-Vala                            | 424 | 3483 | 3279 | 27305 |
-C/C++ Header                    | 171 | 1662 | 3710 | 6752 |
-Java                             | 30 | 830 | 2867 | 3868 |
-Vala Header                      | 19 | 283 | 245 | 3387 |
-C++                              | 16 | 448 | 589 | 2959 |
-PHP                              | 46 | 272 | 173 | 1907 |
-CSS                              | 19 | 372 | 138 | 1789 |
-XHTML                            | 26 | 325 | 62 | 1463 |
-JavaScript                       | 13 | 238 | 727 | 1438 |
-make                             | 66 | 571 | 50 | 1423 |
-Lua                              | 25 | 198 | 110 | 1252 |
-Bourne Shell                      | 7 | 51 | 93 | 221 |
-Ant                               | 2 | 22 | 28 | 155 |
-m4                                | 2 | 28 | 17 | 110 |
-Perl                              | 1 | 32 | 36 | 107 |
-Assembly                          | 2 | 14 | 41 | 84 |
-HTML                              | 2 | 6 | 0 | 41 |
-XML                               | 1 | 0 | 3 | 27 |
-Bourne Again Shell                | 1 | 9 | 0 | 24 |
-NAnt script                       | 1 | 9 | 0 | 23 |
-DOS Batch                         | 1 | 2 | 0 | 2 |
-SUM:                           | 1002 | 16925 | 19938 | 112813 |
-
-
+File | files | blank | comment | code 
+-- | -- | -- | -- | -- 
+libsync.txt                      | 241 | 8649 | 9998 | 56467 
+aroop.txt                        | 256 | 3561 | 2506 | 22042 
+miniim.txt                        | 88 | 1757 | 3824 | 8572 
+shotodol.txt                     | 134 | 574 | 867 | 6564 
+roopkotha.txt                     | 66 | 737 | 990 | 4903 
+opp_factory.txt                   | 23 | 517 | 308 | 3875 
+roopkotha_vela.txt                | 56 | 302 | 638 | 2689 
+hciplus.txt                       | 29 | 207 | 141 | 2089 
+barrel.txt                        | 47 | 270 | 135 | 1864 
+shotodol_net.txt                  | 20 | 115 | 161 | 1454 
+shotodol_web.txt                  | 20 | 116 | 189 | 1151 
+shotodol_db.txt                   | 12 | 74 | 122 | 689 
+shotodol_script.txt                | 8 | 34 | 39 | 354 
+shotodol_media.txt                 | 2 | 12 | 20 | 100 
+SUM:                            | 1002 | 16925 | 19938 | 112813
 
 Enjoy !
