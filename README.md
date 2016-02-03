@@ -14,6 +14,11 @@ $(CLOC) --sum-reports --out summary.txt *.txt
 pie.py summary.txt.lang
 ```
 
+It is also possible to get the pie chart from csv file.
+```
+pie.py info.csv
+```
+
 Here is my pie.
 
 ![pie](https://cloud.githubusercontent.com/assets/973414/12768766/aa70e5a8-c9d7-11e5-9e18-069bd961a3c8.jpg)

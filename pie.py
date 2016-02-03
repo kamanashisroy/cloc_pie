@@ -3,6 +3,7 @@ This code generates pie chart out of cloc summary file
 """
 from pylab import *
 import re
+import csv
 
 # read cloc generated file
 lineno = 0
@@ -12,20 +13,28 @@ fracs = []
 #labels = 'Frogs', 'Hogs', 'Dogs', 'Logs'
 #fracs = [15, 30, 45, 10]
 #explode=(0, 0.05, 0, 0)
-
-with open(sys.argv[1], 'r') as f:
-	for line in f:
-		lineno += 1
-		if lineno < 5 :
-			continue
-		if line.startswith('--'):
-			continue
-		if line.startswith('SUM'):
-			continue
-		m = re.search('^([a-zA-Z/+\s4]+)+\s+(\d+)\s+(\d+)\s+(\d+)\s+(\d+)$', line);
-		labels.append(m.group(1))
-		fracs.append(m.group(5))
-f.closed
+if sys.argv[1].endswith(".csv"):
+	with open(sys.argv[1], 'r') as f:
+		langs = csv.reader(f,delimiter=',')
+		header = langs.next();
+		for row in langs:
+			labels.append(row[header.index('language')])
+			fracs.append(row[header.index('code')])
+	f.closed
+else:
+	with open(sys.argv[1], 'r') as f:
+		for line in f:
+			lineno += 1
+			if lineno < 5 :
+				continue
+			if line.startswith('--'):
+				continue
+			if line.startswith('SUM'):
+				continue
+			m = re.search('^([a-zA-Z/+\s4]+)+\s+(\d+)\s+(\d+)\s+(\d+)\s+(\d+)$', line);
+			labels.append(m.group(1))
+			fracs.append(m.group(5))
+	f.closed
 
 # make a square figure and axes
 figure(1, figsize=(6,6))
