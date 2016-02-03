@@ -14,6 +14,10 @@ $(CLOC) --sum-reports --out summary.txt *.txt
 pie.py summary.txt.lang
 ```
 
+Here is my pie.
+
+![pie](https://cloud.githubusercontent.com/assets/973414/12768766/aa70e5a8-c9d7-11e5-9e18-069bd961a3c8.jpg)
+
 And that will generate a nice `pie.svg` file.
 
 Again, it is also possible to convert the cloc summary table into markdown table.
